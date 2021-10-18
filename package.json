@@ -1,9 +1,14 @@
 {
-    "name": "json-files",
-    "version": "0.1.0",
+    "name": "typed-jsonfile",
+    "version": "0.1.1",
     "repository": "https://github.com/zardoy/json-files.git",
     "author": "Vitaly Turovsky <vital2580@icloud.com>",
     "license": "MIT",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "files": [
+        "build"
+    ],
     "scripts": {
         "prepublishOnly": "tsc"
     },
