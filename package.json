@@ -1,6 +1,6 @@
 {
     "name": "typed-jsonfile",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "repository": "https://github.com/zardoy/json-files.git",
     "author": "Vitaly Turovsky <vital2580@icloud.com>",
     "license": "MIT",
@@ -19,6 +19,7 @@
         "typescript": "^4.4.4"
     },
     "dependencies": {
+        "jsonc-parser": "^3.0.0",
         "jsonfile": "^6.1.0",
         "type-fest": "^2.5.1"
     }
