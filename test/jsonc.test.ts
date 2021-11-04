@@ -27,7 +27,5 @@ Object {
 })
 
 test("Throws on jsonc when file isn't jsonc", async () => {
-    await expect(readJsonFile(join(__dirname, './tsconfig.fixture.jsonc'), { jsonc: false })).rejects.toMatchInlineSnapshot(
-        `[SyntaxError: /Users/vitaly/Documents/typed-jsonfile/test/tsconfig.fixture.jsonc: Unexpected token / in JSON at position 0]`,
-    )
+    await expect(readJsonFile(join(__dirname, './tsconfig.fixture.jsonc'), { jsonc: false })).rejects.toThrow(/Unexpected token \/ in JSON at position 0/)
 })
